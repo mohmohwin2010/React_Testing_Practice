@@ -1,5 +1,7 @@
 // // import { SimplePost } from "./components/1Simple/SimplePost"
 
+// import { SimplePost } from "./components/7Snapshots/SimplePost";
+
 // // import UseArrayExample from "./components/2Hooks/UseArrayExample";
 
 // // import { PostWitComment } from "./components/3UserInterface/PostWithComment"
@@ -64,11 +66,25 @@
 // export default App
 
 //Routing testing with React Testing Library - Jest/Vitest
-import {AppWithRoutes} from "./components/6Router/AppWithRoutes"
+// import {AppWithRoutes} from "./components/6Router/AppWithRoutes"
+// function App(){
+//   return <>
+//   <AppWithRoutes />
+//   </>
+  
+// }
+// export default App;
+
+
+//snapshot testing
+import {SimplePost}  from "./components/7Snapshots/SimplePost";
 function App(){
   return <>
-  <AppWithRoutes />
+    <SimplePost
+    content="Simple content"
+    user="Alex"
+    likesBy={["John", "Mary"]}
+    />
   </>
-  
 }
 export default App;
