@@ -1,2 +1,2 @@
 
-- in this version include from Test Driven Development
+- in this version include CI/CD and React Testing
