@@ -77,14 +77,14 @@
 
 
 //snapshot testing
-import {SimplePost}  from "./components/7Snapshots/SimplePost";
+import { Post } from "./components/8TDD/Post";
 function App(){
   return <>
-    <SimplePost
-    content="Simple content"
-    user="Alex"
-    likesBy={["John", "Mary"]}
-    />
+          <Post
+       content="The sun is bright"
+       id="123"
+       user="Alex"
+      />
   </>
 }
 export default App;
