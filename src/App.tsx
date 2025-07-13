@@ -79,6 +79,7 @@
 //snapshot testing
 import { Post } from "./components/8TDD/Post";
 function App(){
+  //comment
   return <>
           <Post
        content="The sun is bright"
