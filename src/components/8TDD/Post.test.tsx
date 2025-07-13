@@ -34,7 +34,7 @@ describe('Post tests with mocks', () => {
     const comments = within(commentsContainer).getAllByRole('paragraph')
     expect(comments.length).toBe(2)
     expect(comments[0]).toHaveTextContent('Cool2')
-    expect(comments[1]).not.toHaveTextContent('Cool1')
+    expect(comments[1]).toHaveTextContent('Cool1')
 
     expect(getCommentsForPostSpy).toHaveBeenCalledTimes(1)
     expect(getCommentsForPostSpy).toHaveBeenCalledWith('123')
